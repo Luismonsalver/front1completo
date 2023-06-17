@@ -15,10 +15,10 @@
     <header>
         <div class="cabecera">
             <h2 class="nombrePagina">
-                <a href="index.html"><span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px"></a>
+                <a href="/"><span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px"></a>
             </h2>
             <div class="links">
-                <a href="/index">Volver a la página principal</a>
+                <a href="/">Volver a la página principal</a>
             </div>
         </div>
         <nav>
@@ -34,54 +34,56 @@
         </nav>
     </header>
     <main>
-        <div>
+        <section>
+            <!-- Formulario para registrarse -->
             <h1>Regístrate para recibir noticias al correo electrónico</h1>
             <form action="" method="post" class="formulario" id="formulario">
                 <fieldset>
-                    <p>Información personal</p>
-                <div>
-                    <p><label for="nombre">Nombre:</label></p>
-                    <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
+                    <h2 class="titulo"><strong>INFORMACIÓN PERSONAL</strong></h2>
 
-                    <p><label for="apellido">Apellido:</label></p>
-                    <input type="text" placeholder="Ingresa tu apellido" id="apellido" name="apellido" required>
+                    <p><label for="nombre">Nombre</label></p>
+                    <input class="entrada" type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
 
-                    <p><label for="email">Email:</label></p>
-                    <input type="email" placeholder="ejemplo@gmail.com" id="email" name="email" required>
+                    <p><label for="apellido">Apellido</label></p>
+                    <input class="entrada" type="text" placeholder="Ingresa tu apellido" id="apellido" name="apellido" required>
 
-                    <p><input type="checkbox" name="mayorEdad" value=1 required>Confirmo que tengo más de 18 años</p>
-                </div>
+                    <p><label for="email">Email</label></p>
+                    <input class="entrada" type="email" placeholder="ejemplo@gmail.com" id="email" name="email" required>
+
+                    <input type="checkbox" name="mayorEdad" value="1" required>Confirmo que tengo más de 18 años
                 </fieldset>
-            <fieldset>
-                <p>Preferencias</p>
-                <div>
+                <fieldset>
+                <h2 class="titulo"><strong>PREFERENCIAS</strong></h2>
                     <p>Selecciona tu deporte favorito</p>
                         <select id="deporteFav" name="deporteFav">
-                                <option value="sinDeporte">No tengo deporte favorito</option>
-                                <option value="Fútbol">Fútbol</option>
-                                <option value="Básquetbol">Básquetbol</option>
-                                <option value="Béisbol">Béisbol</option>
-                                <option value="Automovilismo">Automovilismo</option>
-                                <option value="Tenis">Tenis</option>
-                                <option value="Atletismo">Atletismo</option>
-                                <option value="Boxeo">Boxeo</option>
-                                <option value="Otro">Otro</option>
+                            <option value="sinDeporte">No tengo deporte favorito</option>
+                            <option value="Fútbol">Fútbol</option>
+                            <option value="Básquetbol">Básquetbol</option>
+                            <option value="Béisbol">Béisbol</option>
+                            <option value="Automovilismo">Automovilismo</option>
+                            <option value="Tenis">Tenis</option>
+                            <option value="Atletismo">Atletismo</option>
+                            <option value="Boxeo">Boxeo</option>
+                            <option value="Otro">Otro</option>
                         </select>
 
-                        <p>Selecciona tu tipo de contenido favorito:</p>
-                        <input type="radio" name="opcion" value="contenidoCualquiera" required> Cualquiera
-                        <input type="radio" name="opcion" value="contenidoImagenes"> Imágenes y texto
-                        <input type="radio" name="opcion" value="contenidoVideos"> Videos
-
-                        <p><input type="checkbox" name="noticiasCorreo" value=1>Quiero recibir ofertas de servicios y productos al correo electrónico</p>
-                </div>
-            </fieldset>
-                <div>
-                    <button type="submit">Enviar</button>
-                    <button type="reset">Restablecer datos</button>
+                        <p>Selecciona tu tipo de contenido favorito</p>
+                        <div class="opciones">
+                            <input type="radio" name="opcion" value="contenidoCualquiera" checked> Cualquiera
+                            <input type="radio" name="opcion" value="contenidoImagenes"> Imágenes y texto
+                            <input type="radio" name="opcion" value="contenidoVideos"> Videos
+                        </div>
+                        <!-- Contenedor para organizar mejor visualmente el texto con el checkbox -->
+                        <div class="checkCorreo">
+                            <input type="checkbox" name="noticiasCorreo" value="1"><div>Quiero recibir ofertas de servicios y productos al correo electrónico</div>
+                        </div>
+                </fieldset>
+                <div class="botones">
+                    <button type="submit">ENVIAR</button>
+                    <button type="reset">RESTABLECER</button>
                 </div>
             </form>
-        </div>
+        </section>
     </main>
     <footer>
         <p class="piePag"><b>© Luis Monsalve C.I. 30.380.310 Todos los derechos reservados. Junio 2023</b></p>

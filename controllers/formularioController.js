@@ -1,6 +1,7 @@
 const controller = {};
 
-controller.list =  (req, res)=> {
+//Leer datos desde el formulario
+controller.listar =  (req, res)=> {
     req.getConnection((err, conn) => {
         conn.query('SELECT * FROM formulario', (err,formulario) => {
             if (err) {
@@ -14,7 +15,8 @@ controller.list =  (req, res)=> {
     });
 };
 
-controller.save = (req, res) => {
+//Guardar datos al formulario
+controller.guardar = (req, res) => {
 
     const data = req.body;
 
@@ -22,7 +24,7 @@ controller.save = (req, res) => {
         conn.query('INSERT INTO formulario set ?', [data], (err, formulario) => {
             console.log(data)
             console.log(formulario);
-            res.redirect('/index');
+            res.redirect('/');
         })
     })
 }

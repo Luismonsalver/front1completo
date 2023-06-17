@@ -3,7 +3,8 @@ const router = express.Router();
 
 const formularioController = require('../controllers/formularioController');
 
-router.get('/',formularioController.list);
-router.post('/', formularioController.save)
+//Rutas para obtener la página y guardar datos
+router.get('/',formularioController.listar);
+router.post('/', formularioController.guardar)
 
 module.exports = router;
