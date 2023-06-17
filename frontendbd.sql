@@ -8,10 +8,9 @@ CREATE TABLE formulario(
   apellido VARCHAR(255) NOT NULL,
   email VARCHAR(255) NOT NULL,
   mayorEdad BOOLEAN NOT NULL,
-  ligaFav VARCHAR(255) NOT NULL,
+  deporteFav VARCHAR(255) NOT NULL,
   opcion VARCHAR(255) NOT NULL,
-  noticiasCorreo BOOLEAN NOT NULL,
-  fechaRegistro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+  noticiasCorreo BOOLEAN NOT NULL
 );
 
 SHOW TABLES;

@@ -4,6 +4,6 @@ const router = express.Router();
 const formularioController = require('../controllers/formularioController');
 
 router.get('/',formularioController.list);
-router.post('/add', formularioController.save)
+router.post('/', formularioController.save)
 
 module.exports = router;

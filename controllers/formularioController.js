@@ -20,8 +20,9 @@ controller.save = (req, res) => {
 
     req.getConnection((err, conn)=> {
         conn.query('INSERT INTO formulario set ?', [data], (err, formulario) => {
+            console.log(data)
             console.log(formulario);
-            res.send('works ')
+            res.redirect('/index');
         })
     })
 }
