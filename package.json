@@ -1,8 +1,8 @@
 {
-  "name": "backendrepaircats-maikelvr-30302836",
+  "name": "frontendbd",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "dev": "nodemon app.js"
     },

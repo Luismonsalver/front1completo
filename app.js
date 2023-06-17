@@ -1,11 +1,12 @@
-var express = require('express');
-var path = require('path');
-var app = express();
-var morgan = require('morgan');
-var mysql = require('mysql');
+const express = require('express');
+const path = require('path');
+const app = express();
+const morgan = require('morgan');
+const mysql = require('mysql');
 
-var conexion = require('express-myconnection')
+const conexion = require('express-myconnection')
 
+const formularioRoutes = require('./routes/formulario')
 
 //CONFIGURACIONES DEL SERVIDOR(BASICAS)
 
@@ -29,6 +30,10 @@ app.use(conexion(mysql, {
     database: 'frontendbd'
 
 }, 'single')); ///Establecer conexión con MYSQL
+
+app.use('/', formularioRoutes);
+
+app.use(express.static(path.join(__dirname, 'public')));
 
 //PRUEBA
 app.listen(3000, () => {
