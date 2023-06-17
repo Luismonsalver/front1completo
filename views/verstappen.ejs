@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Monsalve">
+    <meta name="description" content="Pagina para iniciar sesión">
+    <title>Diario UVM Sport</title>
+    <link rel="shortcut icon" href="resources/images/logoUVM.png">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="/styles/verstappen.css">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <h2 class="nombrePagina">
+                <a href="/"><span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px"></a>
+            </h2>
+            <div class="links">
+                <a href="/">Volver a la página principal</a>
+            </div>
+        </div>
+        <nav>
+            <ul class="categorias">
+                <li><a href="#">FÚTBOL</a></li>
+                <li><a href="#">BÁSQUETBOL</a></li>
+                <li><a href="#">BÉISBOL</a></li>
+                <li><a href="#">AUTOMOVILISMO</a></li>
+                <li><a href="#">TENIS</a></li>
+                <li><a href="#">ATLETISMO</a></li>
+                <li><a href="#">BOXEO</a></li>
+              </ul>
+        </nav>
+    </header>
+        <main>
+                    <article>
+                        <div class="tituloArticulo">
+                            <p class="categoriaSelec">AUTOMOVILISMO</p>
+                            <h1>Max Verstappen, más líder que nunca después del GP de España</h1>
+                            <!-- Nombre del autor y fecha de la publicación -->
+                            <p class="autor">Luis Monsalve</p>
+                            <p class="fecha"><small>Publicado el <time datetime="2023-05-06" pubdate>06 de mayo de 2023</time></small></p>
+                        </div>
+                        <figure class="imagen">
+                            <img src="resources/images/noticias/verstappen.jpg" alt="Verstappen" width="100%">
+                            <figcaption class="imagenCap">Verstappen, además de la victoria también se quedó con la pole y la vuelta rápida de la carrera.</figcaption>
+                        </figure>
+                    </article>
+                        <section class="divisor">
+                            <div class="noticia">
+                                <p><strong>El piloto neerlandés de 25 años se hizo con la victoria número 40 de su carrera y se posiciona para ganar su tercer campeonato de forma consecutiva.</strong></p>
+                                <p>El piloto de Red Bull, Max Verstappen, fortaleció su posición de liderato en el Campeonato Mundial de Pilotos de Fórmula 1 al obtener una victoria clara en el Gran Premio de España, 
+                                    el séptimo de la temporada, que se llevó a cabo en el circuito de Montmeló (Barcelona). En esta carrera, Verstappen dejó atrás a los dos pilotos de Mercedes, Lewis Hamilton y George Russell, 
+                                    quienes ocuparon los lugares de honor.</p>
+                                <p>Con 25 años de edad, Verstappen, quien busca su tercer título consecutivo, logró su cuadragésima victoria en la Fórmula 1 y la quinta de la 
+                                    temporada. Dominó la carrera de principio a fin, obteniendo un "<mark>Grand Chelem</mark>" al partir desde la pole position, liderar en cada vuelta y 
+                                    marcar la vuelta más rápida en el Circuit de Barcelona-Catalunya. Lewis Hamilton, siete veces campeón mundial, ocupó el segundo lugar, 
+                                    seguido por George Russell. El otro automóvil de Red Bull, conducido por el mexicano Checo Pérez, finalizó en cuarto lugar.</p>
+                                <p>Por otra parte, El piloto mexicano Checo Pérez destacó su cuarto puesto en el Gran Premio de España como un logro notable, especialmente considerando 
+                                    su posición de salida en el undécimo lugar debido a un mal rendimiento el sábado.</p>
+                                    <blockquote>
+                                        <div class="cita">
+                                        <p>“Pagamos el mal día de calificación. Estuvimos todo el tiempo un paso detrás de Max y hay que entender el por qué, porque el auto ha sido difícil de manejar el fin de semana. 
+                                            Me hubiera encantado estar en podio, pero es lo que es y ahora pensar en lo que viene”</p>
+                                        <cite>Sergio "Checo" Pérez</cite>
+                                        </div>
+                                    </blockquote>
+                                    <p>Checo enfatizó que no pudo igualar el desempeño de Max Verstappen, quien obtuvo otra victoria y amplió su ventaja en el campeonato mundial de pilotos a 53 puntos. A pesar de ello, 
+                                        Pérez logró minimizar los daños al conseguir un sólido cuarto puesto.</p>
+
+                                <figure class="audio">
+                                    <audio src="resources/audio/himnopaisesbajos.mp3" controls></audio>
+                                    <figcaption>Por si no lo has escuchado aún, aquí tienes el himno de los Países Bajos, que ya ha sido reproducido 40 veces en el podio gracias a Max.</figcaption>
+                                </figure>
+                                <!-- Comentarios de la noticia -->
+                                <div class="comentarios">
+                                    <form class="cajaComentarios">
+                                        <label for="mensaje">Deja tu comentario</label>
+                                        <textarea id="mensaje" name="mensaje" rows="4" maxlength="100" placeholder="Puedes escribir hasta 100 caracteres" required></textarea>
+                                        <button type="submit">Enviar</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Contenido lateral de la página -->
+                            <aside>
+                                <div class="tabla">
+                                    <table>
+                                        <caption>Posiciones de la Fórmula 1 2023</caption>
+                                        <thead>
+                                          <tr>
+                                            <th>POS</th>
+                                            <th>PILOTO</th>
+                                            <th class="destacadoTabla">PTS</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr>
+                                            <td>1</td>
+                                            <td class="nombres"><a href="#">Max Verstappen</a></td>
+                                            <td class="puntos">170</td>
+                                          </tr>
+                                          <tr>
+                                            <td>2</td>
+                                            <td class="nombres"><a href="#">Sergio Pérez</a></td>
+                                            <td class="puntos">117</td>
+                                          </tr>
+                                          <tr>
+                                            <td>3</td>
+                                            <td class="nombres"><a href="#">Fernando Alonso</a></td>
+                                            <td class="puntos">99</td>
+                                          </tr>
+                                          <tr>
+                                            <td>4</td>
+                                            <td class="nombres"><a href="#">Lewis Hamilton</a></td>
+                                            <td class="puntos">87</td>
+                                          </tr>
+                                          <tr>
+                                            <td>5</td>
+                                            <td class="nombres"><a href="#">George Russell</a></td>
+                                            <td class="puntos">65</td>
+                                          </tr>
+                                        </tbody>
+                                        <tfoot>
+                                          <tr>
+                                            <div class="pieTabla">
+                                                <td colspan="3" class="pieTabla">Las posiciones se actualizan al terminar cada carrera.</td>
+                                            </div>
+                                          </tr>
+                                        </tfoot>
+                                      </table>
+                                </div>
+                                <div class="ultimasNoticias">
+                                    <h3>ÚLTIMAS NOTICIAS</h3>
+                                    <ul>
+                                        <li>
+                                            <article>
+                                                <a href="/messi"><img src="resources/images/noticias/messi.jpeg" alt="Messi" width="100%">Messi muy cerca de volver al Barcelona</a>
+                                            </article>
+                                            <div class="pieArticulo">
+                                                <p class="categoriaArticulo">FÚTBOL</p>
+                                                <p class="fechaArticulo"><small><time datetime="2023-05-06" pubdate>06/05/2023</time></small></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <article>
+                                                <a href="#"><img src="resources/images/noticias/denvernuggets.jpg" alt="Denver Nuggets" width="100%">Los Denver Nuggets ganan su primer título de la NBA</a>
+                                            </article>
+                                            <div class="pieArticulo">
+                                                <p class="categoriaArticulo">BÁSQUETBOL</p>
+                                                <p class="fechaArticulo"><small><time datetime="2023-06-16" pubdate>16/06/2023</time></small></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <article>
+                                                <a href="#"><img src="resources/images/noticias/djokovic.jpeg" alt="Djokovic" width="100%">Novak Djokovic gana el tercer Roland Garros de su carrera</a>
+                                            </article>
+                                            <div class="pieArticulo">
+                                                <p class="categoriaArticulo">TENIS</p>
+                                                <p class="fechaArticulo"><small><time datetime="2023-06-16" pubdate>16/06/2023</time></small></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </section>
+        </main>
+    <footer>
+        <p class="piePag">© Luis Monsalve C.I. 30.380.310 Todos los derechos reservados. Junio 2023</p>
+            <adress>
+                <div class="contacto">
+                <p>Contáctanos</p>
+                    <ul>
+                        <li><a href="https://www.instagram.com/"><img src="resources/images/instagram.png" alt="Instagram" width="100%">diariouvmsport</a></li>
+                        <li><a href="https://www.facebook.com/"><img src="resources/images/facebook.png" alt="Facebook" width="100%">Diario UVM Sport</a></li>
+                        <li><a href="https://www.twitter.com/"><img src="resources/images/twitter.png" alt="Twitter" width="100%">@diariouvmsport</a></li>
+                        <li><a href="https://www.youtube.com/"><img src="resources/images/youtube.png" alt="YouTube" width="100%" >Diario UVM Sport</a></li>
+                    </ul>
+                </div>
+            </adress>
+    </footer>
+</body>
+</html>

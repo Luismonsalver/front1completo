@@ -108,7 +108,10 @@ body {
     width: 400%;
     animation: slide 20s infinite ease-in-out;
     margin-top: 0;
-    /* animation-play-state: paused; */
+    /* Atributo para pausar la animación del slider
+
+    animation-play-state: paused; */
+
   }
 
   .slider li {
@@ -132,6 +135,8 @@ body {
     width: 100%;
     margin: 0;
   }
+
+  /* @keyframes utilizado para crear animaciones mediante la definición de un conjunto de estados clave de la animación y la transición entre ellos */
 
   @keyframes slide {
     0% {margin-left: 0%;}

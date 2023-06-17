@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Monsalve">
+    <meta name="description" content="Pagina para la actividad 2.2 de Front End">
+    <title>Diario UVM Sport</title>
+    <link rel="shortcut icon" href="resources/images/logoUVM.png">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="/styles/messi.css">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <h2 class="nombrePagina">
+                <a href="/"><span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px"></a>
+            </h2>
+            <div class="links">
+                <a href="/">Volver a la página principal</a>
+            </div>
+        </div>
+        <nav>
+            <ul class="categorias">
+                <li><a href="#">FÚTBOL</a></li>
+                <li><a href="#">BÁSQUETBOL</a></li>
+                <li><a href="#">BÉISBOL</a></li>
+                <li><a href="#">AUTOMOVILISMO</a></li>
+                <li><a href="#">TENIS</a></li>
+                <li><a href="#">ATLETISMO</a></li>
+                <li><a href="#">BOXEO</a></li>
+              </ul>
+        </nav>
+    </header>
+        <main>
+                    <article>
+                        <div class="tituloArticulo">
+                            <p class="categoriaSelec">FÚTBOL</p>
+                            <h1>Messi muy cerca de volver al Barcelona</h1>
+                            <!-- Nombre del autor y fecha de la publicación -->
+                            <p class="autor">Luis Monsalve</p>
+                            <p class="fecha"><small>Publicado el <time datetime="2023-05-06" pubdate>06 de mayo de 2023</time></small></p>
+                        </div>
+                        <figure class="imagen">
+                            <img src="resources/images/noticias/messi.jpeg" alt="Messi PSG" width="100%">
+                            <figcaption class="imagenCap">Messi en su último partido con el PSG.</figcaption>
+                        </figure>
+                    </article>
+                        <section class="divisor">
+                            <div class="noticia">
+                                <p><strong>Jorge Messi y Joan Laporta se reunieron hoy para tratar de llegar a un acuerdo. </strong>Leo Messi y el FC Barcelona están aprovechando 
+                                    una última oportunidad. A pesar de que el Al-Hilal saudí había dado por cerrado su fichaje como agente libre con un salario exorbitante, y el 
+                                    Inter de Miami había aumentado su oferta creyendo que tenía serias posibilidades de incorporar al exjugador azulgrana, Jorge Messi 
+                                    (padre de Leo) y Joan Laporta (presidente del FC Barcelona) se reunieron esta mañana durante aproximadamente treinta minutos.<br><br>
+                                    La reunión tuvo lugar en la residencia del máximo dirigente del Barcelona, que se encuentra cerca de la oficina profesional de los Messi en Barcelona. 
+                                    Durante este encuentro, ambas partes aprovecharon la oportunidad de explorar las opciones para llegar a un acuerdo que permita el regreso de Leo al FC Barcelona.</p>
+                                <blockquote>
+                                    <div class="cita">
+                                        <p>Jorge Messi tras reunirse con el presidente del Barcelona, Laporta: “Leo quiere volver a Barcelona y me encantaría verlo de vuelta en el Barça”.</p>
+                                        <cite>Fabrizio Romano</cite>
+                                    </div>
+                                </blockquote>
+                                <p>Además, como es evidente, Messi pasaría a ser el jugador mejor pagado de la plantilla del Barcelona, ahora mismo en el club los futbolistas mejores pagados del equipo son los siguientes:</p>
+                                <ol>
+                                    <li>Marc-André ter Stegen</li>
+                                    <li>Robert Lewandowski</li>
+                                    <li>Ousmane Dembélé </li>
+                                    <li>Franck Kessié</li>
+                                    <li>Jules Koundé</li>
+                                </ol>
+                                <figure class="video">
+                                    <video src="resources/videos/messigol.mp4" controls></video>
+                                    <figcaption class="videoCaption">Último gol de Messi con el club parisino.</figcaption>
+                                </figure>
+                                <!-- Comentarios de la noticia -->
+                                <div class="comentarios">
+                                    <form class="cajaComentarios">
+                                        <label for="mensaje">Deja tu comentario</label>
+                                        <textarea id="mensaje" name="mensaje" rows="4" maxlength="100" placeholder="Puedes escribir hasta 100 caracteres" required></textarea>
+                                        <button type="submit">Enviar</button>
+                                    </form>
+                                </div>
+                            </div>
+                            <!-- Contenido lateral de la página -->
+                            <aside>
+                                <div class="tabla">
+                                    <table>
+                                        <caption>Tabla de posiciones de la Premier League</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>POS</th>
+                                                <th>EQUIPO</th>
+                                                <th>PJ</th>
+                                                <th>V</th>
+                                                <th>E</th>
+                                                <th>D</th>
+                                                <th class="destacadoTabla">PTS</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td class="nombres"><a href="#">M. City</a></td>
+                                                <td>38</td>
+                                                <td>28</td>
+                                                <td>5</td>
+                                                <td>5</td>
+                                                <td class="puntos">89</td>
+                                            </tr>
+                                            <tr>
+                                                <td>2</td>
+                                                <td class="nombres"><a href="#">Arsenal</a></td>
+                                                <td>38</td>
+                                                <td>26</td>
+                                                <td>6</td>
+                                                <td>6</td>
+                                                <td class="puntos">84</td>
+                                            </tr>
+                                            <tr>
+                                                <td>3</td>
+                                                <td class="nombres"><a href="#">M. United</a></td>
+                                                <td>38</td>
+                                                <td>23</td>
+                                                <td>6</td>
+                                                <td>9</td>
+                                                <td class="puntos">75</td>
+                                            </tr>
+                                            <tr>
+                                                <td>4</td>
+                                                <td class="nombres"><a href="#">Newcastle</a></td>
+                                                <td>38</td>
+                                                <td>19</td>
+                                                <td>14</td>
+                                                <td>5</td>
+                                                <td class="puntos">71</td>
+                                            </tr>
+                                            <tr>
+                                                <td>5</td>
+                                                <td class="nombres"><a href="#">Liverpool</a></td>
+                                                <td>38</td>
+                                                <td>19</td>
+                                                <td>10</td>
+                                                <td>9</td>
+                                                <td class="puntos">67</td>
+                                            </tr>
+                                        </tbody>
+                                        <tfoot>
+                                            <tr>
+                                                <td colspan="7">
+                                                    <ul class="pieTabla">
+                                                        <li><strong>POS: </strong>Posición</li>
+                                                        <li><strong>PJ: </strong>Partidos Jugados</li>
+                                                        <li><strong>V: </strong>Victorias</li>
+                                                        <li><strong>E: </strong>Empates</li>
+                                                        <li><strong>D: </strong>Derrotas</li>
+                                                        <li><strong>PTS: </strong>Puntos</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tfoot>
+                                    </table>
+                                </div>
+                                <div class="ultimasNoticias">
+                                    <h3>ÚLTIMAS NOTICIAS</h3>
+                                    <ul>
+                                        <li>
+                                            <article>
+                                                <a href="/verstappen"><img src="resources/images/noticias/verstappen.jpg" alt="Verstappen" width="100%">Max Verstappen, más líder que nunca después del GP de España</a>
+                                            </article>
+                                            <div class="pieArticulo">
+                                                <p class="categoriaArticulo">AUTOMOVILISMO</p>
+                                                <p class="fechaArticulo"><small><time datetime="2023-05-06" pubdate>06/05/2023</time></small></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <article>
+                                                <a href="#"><img src="resources/images/noticias/denvernuggets.jpg" alt="Denver Nuggets" width="100%">Los Denver Nuggets ganan su primer título de la NBA</a>
+                                            </article>
+                                            <div class="pieArticulo">
+                                                <p class="categoriaArticulo">BÁSQUETBOL</p>
+                                                <p class="fechaArticulo"><small><time datetime="2023-06-16" pubdate>16/06/2023</time></small></p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <article>
+                                                <a href="#"><img src="resources/images/noticias/djokovic.jpeg" alt="Djokovic" width="100%">Novak Djokovic gana el tercer Roland Garros de su carrera</a>
+                                            </article>
+                                            <div class="pieArticulo">
+                                                <p class="categoriaArticulo">TENIS</p>
+                                                <p class="fechaArticulo"><small><time datetime="2023-06-16" pubdate>16/06/2023</time></small></p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </aside>
+                        </section>
+        </main>
+    <footer>
+        <p class="piePag">© Luis Monsalve C.I. 30.380.310 Todos los derechos reservados. Junio 2023</p>
+            <adress>
+                <div class="contacto">
+                <p>Contáctanos</p>
+                    <ul>
+                        <li><a href="https://www.instagram.com/"><img src="resources/images/instagram.png" alt="Instagram" width="100%">diariouvmsport</a></li>
+                        <li><a href="https://www.facebook.com/"><img src="resources/images/facebook.png" alt="Facebook" width="100%">Diario UVM Sport</a></li>
+                        <li><a href="https://www.twitter.com/"><img src="resources/images/twitter.png" alt="Twitter" width="100%">@diariouvmsport</a></li>
+                        <li><a href="https://www.youtube.com/"><img src="resources/images/youtube.png" alt="YouTube" width="100%" >Diario UVM Sport</a></li>
+                    </ul>
+                </div>
+            </adress>
+    </footer>
+</body>
+</html>

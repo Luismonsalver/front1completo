@@ -1,142 +1,222 @@
 body {
-    margin:0;
-    background-color: #F5F5F5;
-  }
-  
-  .nombrePagina {
-      padding-left: 30px;
-      margin: 0;
-      font: 90px rockwell;
-      text-align: center;
-    }
-  
-  .uvm {
-      color:#88C426;
-    }
-    
-  .sport {
-      color:#ffff;
-    }
-  
-  header .cabecera{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #1C2833;
-  }
-  
-  header h2 img {
-    margin-left: 10px;
-  }
-  
-  header h2 a {
-    text-decoration: none;
-  }
-  
-  header .links {
-    padding: 13px 30px 16px 10px;
-    font: bold 20px Georgia;
-    display: flex;
-    align-items: center;
-  }
-  
-  header .links a {
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 5px;
-    padding-top: 4px;
-    margin-right: 10px;
-    margin-left: 10px;
-    text-decoration: none;
-    color: #ffff;
-    background-color: #515A5A;
-    border-radius: 2px;
-  }
+  margin:0;
+  background-color: #F5F5F5;
+}
 
-  nav .categorias {
-    display: flex;
-    justify-content: center;
-    font: bold 20px Rockwell;
-    color: #1C2833;
-    margin:0;
-    padding: 10px;
-    background-color: #D5D8DC;
-  }
-  
-  nav .categorias li {
-    list-style: none;
-  }
-  
-  nav .categorias a {
-    text-decoration: none;
-    color: #1C2833;
-  }
-  
-  nav .categorias li:not(:last-child)::after {
-    content: "•";
-    margin: 0 10px;
-  }
-
-  main {
-    width: 1000px;
-    margin: auto;
-  }
-
-  h1 {
-    font-family: Didot;
-    padding-bottom: 15px;
-    border-bottom: 2px solid #1C2833;
+.nombrePagina {
+    padding-left: 30px;
+    margin: 0;
+    font: 90px rockwell;
     text-align: center;
-    color:#1C2833;
   }
 
+.uvm {
+    color:#88C426;
+  }
+  
+.sport {
+    color:#ffff;
+  }
 
-  .piePag {
-    background-color:#1C2833;
-    color:#EFEDED;
-    font: bold 14px Arial;
-    padding-top: 28px;
-    padding-bottom: 28px;
-    padding-left: 37px;
-    margin-bottom: 0;
-    }
-    
-    .contacto {
-      text-align: center;
-      background-color: #D5D8DC;
-      padding-top: 15px;
-      padding-bottom: 20px;
-    }
-    
-    .contacto p {
-      margin: 0;
-      padding-bottom: 15px;
-      font: bold 25px Calibri;
-    }
-    
-    .contacto ul {
-      margin: 0;
-    }
-    
-    .contacto ul li{
-      list-style: none;
-      display: inline-block;
-      margin: 0;
-      font-size: 20px;
-      padding-left: 5px;
-      padding-right: 5px;
-      padding-bottom: 5px;
-      font: 20px Calibri;
-    }
-    
-    .contacto img {
-      height: 25px;
-      width: auto;
-      margin-right: 7px;
-    }
-    
-    .contacto a {
-      text-decoration: none;
-      color: #000000;
-      display: inline-flex;
-    }
+header .cabecera{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #1C2833;
+}
+
+header h2 img {
+  margin-left: 10px;
+}
+
+header h2 a {
+  text-decoration: none;
+}
+
+header .links {
+  padding: 13px 30px 16px 10px;
+  font: bold 20px Georgia;
+  display: flex;
+  align-items: center;
+}
+
+header .links a {
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 5px;
+  padding-top: 4px;
+  margin-right: 10px;
+  margin-left: 10px;
+  text-decoration: none;
+  color: #ffff;
+  background-color: #515A5A;
+  border-radius: 2px;
+}
+
+nav .categorias {
+  display: flex;
+  justify-content: center;
+  font: bold 20px Rockwell;
+  color: #1C2833;
+  margin:0;
+  padding: 10px;
+  background-color: #D5D8DC;
+}
+
+nav .categorias li {
+  list-style: none;
+}
+
+nav .categorias a {
+  text-decoration: none;
+  color: #1C2833;
+}
+
+nav .categorias li:not(:last-child)::after {
+  content: "•";
+  margin: 0 10px;
+}
+
+main {
+  width: 1000px;
+  margin: auto;
+}
+
+h1 {
+  font-family: Didot;
+  padding-bottom: 15px;
+  border-bottom: 2px solid #1C2833;
+  text-align: center;
+  color:#1C2833;
+}
+
+.formulario {
+  width: 500px;
+  margin: auto;
+  font-family: 'Trebuchet MS';
+}
+
+.formulario fieldset {
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  color: #F5F5F5;
+  background-color: #1C2833;
+  padding: 30px;
+}
+
+.formulario p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.formulario h2 {
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 25px;
+  color: #88C426;
+}
+
+.formulario .entrada {
+  background-color: #F5F5F5;
+  width: calc(100% - 26.4px);
+  border: 3.5px solid #88C426;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+  /* Atributo para modificar el input cuando está checkeado, con el accent-color para modificar el color */
+
+input[type="checkbox"]:checked {
+  accent-color: #88C426;
+}
+
+input[type="radio"]:checked {
+  accent-color: #88C426;
+}
+
+.formulario select {
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 3.5px solid #88C426;
+  font-family: 'Calibri';
+  font-weight: bold;
+  color: #404444;
+}
+
+.formulario .opciones {
+  margin-bottom: 20px;
+}
+
+.formulario .botones {
+  text-align: center;
+}
+
+.formulario .checkCorreo {
+  display: inline-flex;
+  align-items: flex-start;
+}
+
+.formulario button {
+  width: calc(100% - 3.2px);
+  margin-bottom: 15px;
+  padding: 15px 0;
+  border: none;
+  border-radius: 10px;
+  background-color: #88C426;
+  color: #F5F5F5;
+  font: bold 18px Calibri
+}
+
+.piePag {
+  background-color:#1C2833;
+  color:#EFEDED;
+  font: bold 14px Arial;
+  padding-top: 28px;
+  padding-bottom: 28px;
+  padding-left: 37px;
+  margin-bottom: 0;
+  }
+  
+  .contacto {
+    text-align: center;
+    background-color: #D5D8DC;
+    padding-top: 15px;
+    padding-bottom: 20px;
+  }
+  
+  .contacto p {
+    margin: 0;
+    padding-bottom: 15px;
+    font: bold 25px Calibri;
+  }
+  
+  .contacto ul {
+    margin: 0;
+  }
+  
+  .contacto ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0;
+    font-size: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    font: 20px Calibri;
+  }
+  
+  .contacto img {
+    height: 25px;
+    width: auto;
+    margin-right: 7px;
+  }
+  
+  .contacto a {
+    text-decoration: none;
+    color: #000000;
+    display: inline-flex;
+  }
