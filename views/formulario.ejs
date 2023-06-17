@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Luis Monsalve">
+    <meta name="description" content="Pagina para el registro de usuario">
+    <title>Diario UVM Sport</title>
+    <link rel="shortcut icon" href="resources/images/logoUVM.png">
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="/public/stylesheets/registro.css">
+</head>
+<body>
+    <header>
+        <div class="cabecera">
+            <h2 class="nombrePagina">
+                <a href="index.html"><span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px"></a>
+            </h2>
+            <div class="links">
+                <a href="index.html">Volver a la página principal</a>
+            </div>
+        </div>
+        <nav>
+            <ul class="categorias">
+                <li><a href="#">FÚTBOL</a></li>
+                <li><a href="#">BÁSQUETBOL</a></li>
+                <li><a href="#">BÉISBOL</a></li>
+                <li><a href="#">AUTOMOVILISMO</a></li>
+                <li><a href="#">TENIS</a></li>
+                <li><a href="#">ATLETISMO</a></li>
+                <li><a href="#">BOXEO</a></li>
+              </ul>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <h1>Regístrate para recibir noticias al correo electrónico</h1>
+            <form action="/add" method="post" class="formulario" id="formulario">
+                <fieldset>
+                    <p>Información personal</p>
+                <div>
+                    <p><label for="nombre">Nombre:</label></p>
+                    <input type="text" placeholder="Ingresa tu nombre" id="nombre" name="nombre" required>
+
+                    <p><label for="apellido">Apellido:</label></p>
+                    <input type="text" placeholder="Ingresa tu apellido" id="apellido" name="apellido" required>
+
+                    <p><label for="email">Email:</label></p>
+                    <input type="email" placeholder="ejemplo@gmail.com" id="email" name="email" required>
+
+                    <p><input type="checkbox" name="mayorEdad" value="mayorEdad" required>Confirmo que tengo más de 18 años</p>
+                </div>
+                </fieldset>
+            <fieldset>
+                <p>Preferencias</p>
+                <div>
+                    <p>Selecciona tu deporte favorito</p>
+                        <select id="ligaFav" name="ligaFav">
+                                <option value="sinDeporte">No tengo deporte favorito</option>
+                                <option value="ligaInglaterra">Fútbol</option>
+                                <option value="ligaEspana">Básquetbol</option>
+                                <option value="ligaAlemania">Béisbol</option>
+                                <option value="ligaItalia">Automovilismo</option>
+                                <option value="ligaFrancia">Tenis</option>
+                                <option value="ligaBrasil">Atletismo</option>
+                                <option value="ligaArgentina">Boxeo</option>
+                                <option value="ligaVenezuela">Otro</option>
+                        </select>
+
+                        <p>Selecciona tu tipo de contenido favorito:</p>
+                        <input type="radio" name="opcion" value="contenidoCualquiera" required> Cualquiera
+                        <input type="radio" name="opcion" value="contenidoImagenes"> Imágenes y texto
+                        <input type="radio" name="opcion" value="contenidoVideos"> Videos
+
+                        <p><input type="checkbox" name="noticiasCorreo" value="noticiasCorreo">Quiero recibir ofertas de servicios y productos al correo electrónico</p>
+                </div>
+            </fieldset>
+                <div>
+                    <button type="submit" onclick="redireccionar()">Enviar</button>
+                    <button type="reset">Restablecer datos</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p class="piePag"><b>© Luis Monsalve C.I. 30.380.310 Todos los derechos reservados. Junio 2023</b></p>
+            <adress>
+                <div class="contacto">
+                    <p>Contáctanos</p>
+                        <ul>
+                            <li><a href="https://www.instagram.com/"><img src="resources/images/instagram.png" alt="Instagram" width="100%">diariouvmsport</a></li>
+                            <li><a href="https://www.facebook.com/"><img src="resources/images/facebook.png" alt="Facebook" width="100%">Diario UVM Sport</a></li>
+                            <li><a href="https://www.twitter.com/"><img src="resources/images/twitter.png" alt="Twitter" width="100%">@diariouvmsport</a></li>
+                            <li><a href="https://www.youtube.com/"><img src="resources/images/youtube.png" alt="YouTube" width="100%" >Diario UVM Sport</a></li>
+                        </ul>
+                    </div>
+            </adress>
+    </footer>
+</body>
+</html>
