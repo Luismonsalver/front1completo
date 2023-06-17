@@ -7,6 +7,7 @@ const mysql = require('mysql');
 const conexion = require('express-myconnection')
 
 const formularioRoutes = require('./routes/formulario')
+const indexRouter = require('./routes/index');
 
 //CONFIGURACIONES DEL SERVIDOR(BASICAS)
 
@@ -31,7 +32,10 @@ app.use(conexion(mysql, {
 
 }, 'single')); ///Establecer conexión con MYSQL
 
+app.use(express.urlencoded({extended: false}));
+
 app.use('/', formularioRoutes);
+app.use('/index', indexRouter);
 
 app.use(express.static(path.join(__dirname, 'public')));
 

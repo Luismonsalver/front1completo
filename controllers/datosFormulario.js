@@ -2,7 +2,7 @@ const controller = {};
 
 controller.list =  (req, res)=> {
     req.getConnection((err, conn) => {
-        conn.query('SELECT * FROM formulario', (err,formulario) => {
+        conn.query('SELECT * FROM datosFormulario', (err,formulario) => {
             if (err) {
                 res.json(err);
             }

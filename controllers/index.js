@@ -14,16 +14,4 @@ controller.list =  (req, res)=> {
     });
 };
 
-controller.save = (req, res) => {
-
-    const data = req.body;
-
-    req.getConnection((err, conn)=> {
-        conn.query('INSERT INTO formulario set ?', [data], (err, formulario) => {
-            console.log(formulario);
-            res.send('works ')
-        })
-    })
-}
-
 module.exports = controller;
