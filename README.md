@@ -1,6 +1,6 @@
 1. Instalamos la siguiente lista de programas: Visual Studio Code, Node.js, XAMPP
 
-2. Vamos al siguiente link: https://github.com/Luismonsalver/frontendbd y descargamos la carpeta de nuestro programa desde el botón de Code/Local y luego a Download ZIP (Hay que tomar en cuenta que existe otro repositorio creado con el link: https://github.com/Luismonsalver/actividad3frontend, el cual contiene únicamente todo lo relacionado al Front End)
+2. Vamos al siguiente link: https://github.com/Luismonsalver/frontendbd y descargamos la carpeta de nuestro programa desde el botón de Code/Local y luego a Download ZIP (Hay que tomar en cuenta que existe otro repositorio creado con el link: https://github.com/Luismonsalver/actividad3frontend, el cual contiene únicamente todo lo relacionado al Front End, además de una carpeta que contiene el resto de archivos a entregar como los árboles DOM, los Mockups y los Wireframes)
 
 3. Una vez descargado el ZIP, lo extraemos y obtenemos la carpeta frontendbd
 
