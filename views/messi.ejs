@@ -7,32 +7,115 @@
     <meta name="author" content="Luis Monsalve">
     <meta name="description" content="Pagina para la actividad 2.2 de Front End">
     <title>Diario UVM Sport</title>
-    <link rel="shortcut icon" href="resources/images/logoUVM.png">
+    <link rel="shortcut icon" href="media/images/logoUVM.png">
     <script src="scripts.js"></script>
+    <link rel="stylesheet" href="/styles/plantilla.css">
     <link rel="stylesheet" href="/styles/messi.css">
 </head>
 <body>
     <header>
         <div class="cabecera">
-            <h2 class="nombrePagina">
-                <a href="/"><span class="uvm">UVM</span> <span class="sport">SPORT</span><img src="resources/images/logoUVM.png" alt="Logo de la pagina" width="62px"></a>
-            </h2>
-            <div class="links">
-                <a href="/">Volver a la página principal</a>
-            </div>
-        </div>
+
+            <a href="/" class="nombrePagina"><img src="media/images/Logopagina.png" alt="Logo de la pagina" class="logoPagina"></a>
+
+            <a href="#menu" class="navMenu">
+                <img src="media/icons/menu.png" class="navIcon">
+            </a>
+
+            <a href="#" class="navMenu navMenu--second">
+                <img src="media/icons/logout.png" class="navIcon">
+            </a>
+
+            <ul class="desplegable" id="menu">
+                <li class="lista">
+                    <a href="/" class="link">
+                        <span class="span">Inicio</span>
+                    </a>
+                </li>
+
+                <li class="lista">
+                    <a href="#" class="link">
+                        <span class="span">Categorías</span>
+                        <img src="media/icons/arrow.png" class="arrow"> 
+
+                        <input type="checkbox" class="check">
+                    </a>
+
+                    <div class="contenido">
+
+                        <ul class="subMenu">
+                            <li class="subLi">
+                                <a href="#" class="ancla">Fútbol</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#" class="ancla">Béisbol</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#" class="ancla">Básquetbol</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#" class="ancla">Automovilismo</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#" class="ancla">Boxeo</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="#" class="ancla">Tenis</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="lista">
+                    <a href="#" class="link">
+                        <span class="span">Contacto</span>
+                        <img src="media/icons/arrow.png" class="arrow"> 
+
+                        <input type="checkbox" class="check">
+                    </a>
+
+                    <div class="contenido">
+
+                        <ul class="subMenu">
+                            <li class="subLi">
+                                <a href="https://www.instagram.com/"  class="ancla">Instagram: diariouvmsport</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="https://www.facebook.com/" class="ancla">Facebook: Diario UVM Sport</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="https://www.twitter.com/" class="ancla">Twitter: @diariouvmsport</a>
+                            </li>
+                            <li class="subLi">
+                                <a href="https://www.youtube.com/" class="ancla">YouTube: Diario UVM Sport</a>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li class="lista">
+                    <a href="/formulario" class="link">
+                        <span class="span">Registro</span>
+                    </a>
+                </li>
+            </ul>
+
+    </div>
+    </header>
         <nav>
             <ul class="categorias">
-                <li><a href="#">FÚTBOL</a></li>
-                <li><a href="#">BÁSQUETBOL</a></li>
-                <li><a href="#">BÉISBOL</a></li>
-                <li><a href="#">AUTOMOVILISMO</a></li>
-                <li><a href="#">TENIS</a></li>
-                <li><a href="#">ATLETISMO</a></li>
-                <li><a href="#">BOXEO</a></li>
+                <div class="animation">
+                    <p>ÚLTIMOS RESULTADOS:</p>
+                    <li>Barcelona 3-0 Real Madrid</li>
+                    <li>Atlético de Madrid 1-0 Sevilla</li>
+                    <li>Manchester City 0-2 Liverpool</li>
+                    <li>Manchester United 2-2 Arsenal</li>
+                    <li>Napoli 3-2 Juventus</li>
+                    <li>Milán 1-1 Inter de Milán</li>
+                    <li>Bayern de Munich 4-0 Borussia Dortmund</li>
+                </div>
               </ul>
         </nav>
-    </header>
         <main>
                     <article>
                         <div class="tituloArticulo">
@@ -43,7 +126,7 @@
                             <p class="fecha"><small>Publicado el <time datetime="2023-05-06" pubdate>06 de mayo de 2023</time></small></p>
                         </div>
                         <figure class="imagen">
-                            <img src="resources/images/noticias/messi.jpeg" alt="Messi PSG" width="100%">
+                            <img src="media/images/noticias/messi.jpeg" alt="Messi PSG" width="100%">
                             <figcaption class="imagenCap">Messi en su último partido con el PSG.</figcaption>
                         </figure>
                     </article>
@@ -70,7 +153,7 @@
                                     <li>Jules Koundé</li>
                                 </ol>
                                 <figure class="video">
-                                    <video src="resources/videos/messigol.mp4" controls></video>
+                                    <video src="media/videos/messigol.mp4" controls></video>
                                     <figcaption class="videoCaption">Último gol de Messi con el club parisino.</figcaption>
                                 </figure>
                                 <!-- Comentarios de la noticia -->
@@ -166,7 +249,7 @@
                                     <ul>
                                         <li>
                                             <article>
-                                                <a href="/verstappen"><img src="resources/images/noticias/verstappen.jpg" alt="Verstappen" width="100%">Max Verstappen, más líder que nunca después del GP de España</a>
+                                                <a href="/verstappen"><img src="media/images/noticias/verstappen.jpg" alt="Verstappen" width="100%">Max Verstappen, más líder que nunca después del GP de España</a>
                                             </article>
                                             <div class="pieArticulo">
                                                 <p class="categoriaArticulo">AUTOMOVILISMO</p>
@@ -175,7 +258,7 @@
                                         </li>
                                         <li>
                                             <article>
-                                                <a href="#"><img src="resources/images/noticias/denvernuggets.jpg" alt="Denver Nuggets" width="100%">Los Denver Nuggets ganan su primer título de la NBA</a>
+                                                <a href="#"><img src="media/images/noticias/denvernuggets.jpg" alt="Denver Nuggets" width="100%">Los Denver Nuggets ganan su primer título de la NBA</a>
                                             </article>
                                             <div class="pieArticulo">
                                                 <p class="categoriaArticulo">BÁSQUETBOL</p>
@@ -184,7 +267,7 @@
                                         </li>
                                         <li>
                                             <article>
-                                                <a href="#"><img src="resources/images/noticias/djokovic.jpeg" alt="Djokovic" width="100%">Novak Djokovic gana el tercer Roland Garros de su carrera</a>
+                                                <a href="#"><img src="media/images/noticias/djokovic.jpeg" alt="Djokovic" width="100%">Novak Djokovic gana el tercer Roland Garros de su carrera</a>
                                             </article>
                                             <div class="pieArticulo">
                                                 <p class="categoriaArticulo">TENIS</p>
@@ -202,10 +285,10 @@
                 <div class="contacto">
                 <p>Contáctanos</p>
                     <ul>
-                        <li><a href="https://www.instagram.com/"><img src="resources/images/instagram.png" alt="Instagram" width="100%">diariouvmsport</a></li>
-                        <li><a href="https://www.facebook.com/"><img src="resources/images/facebook.png" alt="Facebook" width="100%">Diario UVM Sport</a></li>
-                        <li><a href="https://www.twitter.com/"><img src="resources/images/twitter.png" alt="Twitter" width="100%">@diariouvmsport</a></li>
-                        <li><a href="https://www.youtube.com/"><img src="resources/images/youtube.png" alt="YouTube" width="100%" >Diario UVM Sport</a></li>
+                        <li><a href="https://www.instagram.com/"><img src="media/images/instagram.png" alt="Instagram" width="100%">diariouvmsport</a></li>
+                        <li><a href="https://www.facebook.com/"><img src="media/images/facebook.png" alt="Facebook" width="100%">Diario UVM Sport</a></li>
+                        <li><a href="https://www.twitter.com/"><img src="media/images/twitter.png" alt="Twitter" width="100%">@diariouvmsport</a></li>
+                        <li><a href="https://www.youtube.com/"><img src="media/images/youtube.png" alt="YouTube" width="100%" >Diario UVM Sport</a></li>
                     </ul>
                 </div>
             </adress>
